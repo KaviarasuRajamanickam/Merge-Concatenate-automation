@@ -1,7 +1,7 @@
 {
-  "name": "Merge-concatenate-automation",
+  "name": "file_automation",
   "version": "1.0.0",
-  "description": "Automating test cases for merge concatenate",
+  "description": "Automating test cases for different set of files",
   "main": "index.js",
   "dependencies": {
     "csv-parser": "^2.3.3",
@@ -27,14 +27,14 @@
       [
         "./node_modules/jest-html-reporter",
         {
-          "pageTitle": "Merge Concatenate Automation Test Report",
+          "pageTitle": "Automation Test Report",
           "includeConsoleLog": true
         }
       ]
     ]
   },
   "scripts": {
-    "test-dev": "jest",
+    "test-dev": "jest --runInBand",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lister",
